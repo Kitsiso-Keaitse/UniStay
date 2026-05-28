@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/navy_dark">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:background="@color/navy_medium"
+        android:layout_marginBottom="8dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="My Listings"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btnAddListing"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:text="+ Add New"
+            android:background="@drawable/bg_button_primary"
+            android:textColor="@color/white"
+            android:textSize="11sp" />
+    </LinearLayout>
+
+    <!-- Filter Chips -->
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="12dp"
+        android:layout_marginBottom="12dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/chipAll"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:text="All (8)"
+                android:background="@drawable/bg_role_selected_student"
+                android:paddingHorizontal="16dp"
+                android:gravity="center"
+                android:textColor="@color/blue_light"
+                android:textSize="11sp"
+                android:layout_marginEnd="8dp" />
+
+            <TextView
+                android:id="@+id/chipAvailable"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:text="Available"
+                android:background="@drawable/bg_role_card"
+                android:paddingHorizontal="16dp"
+                android:gravity="center"
+                android:textColor="@color/white_40"
+                android:textSize="11sp"
+                android:layout_marginEnd="8dp" />
+
+            <TextView
+                android:id="@+id/chipReserved"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:text="Reserved"
+                android:background="@drawable/bg_role_card"
+                android:paddingHorizontal="16dp"
+                android:gravity="center"
+                android:textColor="@color/white_40"
+                android:textSize="11sp" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <!-- Listings RecyclerView -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewListings"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="12dp" />
+
+    <!-- Empty State -->
+    <TextView
+        android:id="@+id/tvEmpty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🏠\nNo listings yet\nTap + Add New to create your first listing"
+        android:textSize="14sp"
+        android:textColor="@color/white_40"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:visibility="gone" />
+
+</LinearLayout>

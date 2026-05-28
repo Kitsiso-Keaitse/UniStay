@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Spacing -->
+    <dimen name="spacing_xxs">2dp</dimen>
+    <dimen name="spacing_xs">4dp</dimen>
+    <dimen name="spacing_sm">8dp</dimen>
+    <dimen name="spacing_md">12dp</dimen>
+    <dimen name="spacing_lg">16dp</dimen>
+    <dimen name="spacing_xl">20dp</dimen>
+    <dimen name="spacing_xxl">24dp</dimen>
+    <dimen name="spacing_xxxl">32dp</dimen>
+
+    <!-- Padding -->
+    <dimen name="padding_small">8dp</dimen>
+    <dimen name="padding_medium">16dp</dimen>
+    <dimen name="padding_large">20dp</dimen>
+    <dimen name="padding_xlarge">24dp</dimen>
+
+    <!-- Margin -->
+    <dimen name="margin_small">8dp</dimen>
+    <dimen name="margin_medium">16dp</dimen>
+    <dimen name="margin_large">20dp</dimen>
+    <dimen name="margin_xlarge">24dp</dimen>
+
+    <!-- Text Sizes -->
+    <dimen name="text_xxs">8sp</dimen>
+    <dimen name="text_xs">10sp</dimen>
+    <dimen name="text_sm">11sp</dimen>
+    <dimen name="text_regular">12sp</dimen>
+    <dimen name="text_medium">14sp</dimen>
+    <dimen name="text_large">16sp</dimen>
+    <dimen name="text_xl">18sp</dimen>
+    <dimen name="text_xxl">20sp</dimen>
+    <dimen name="text_xxxl">24sp</dimen>
+    <dimen name="text_display">28sp</dimen>
+    <dimen name="text_hero">32sp</dimen>
+
+    <!-- Component Sizes -->
+    <dimen name="button_height_small">36dp</dimen>
+    <dimen name="button_height_medium">44dp</dimen>
+    <dimen name="button_height_large">52dp</dimen>
+
+    <dimen name="input_height_small">36dp</dimen>
+    <dimen name="input_height_medium">44dp</dimen>
+    <dimen name="input_height_large">52dp</dimen>
+
+    <!-- Card Radius -->
+    <dimen name="card_radius_small">8dp</dimen>
+    <dimen name="card_radius_medium">12dp</dimen>
+    <dimen name="card_radius_large">16dp</dimen>
+    <dimen name="card_radius_xlarge">20dp</dimen>
+
+    <!-- Image Sizes -->
+    <dimen name="image_small">32dp</dimen>
+    <dimen name="image_medium">48dp</dimen>
+    <dimen name="image_large">64dp</dimen>
+    <dimen name="image_xlarge">80dp</dimen>
+    <dimen name="image_xxlarge">100dp</dimen>
+
+    <!-- Avatar Sizes -->
+    <dimen name="avatar_small">28dp</dimen>
+    <dimen name="avatar_medium">40dp</dimen>
+    <dimen name="avatar_large">60dp</dimen>
+    <dimen name="avatar_xlarge">80dp</dimen>
+
+    <!-- Icon Sizes -->
+    <dimen name="icon_xxs">16dp</dimen>
+    <dimen name="icon_xs">20dp</dimen>
+    <dimen name="icon_sm">24dp</dimen>
+    <dimen name="icon_md">28dp</dimen>
+    <dimen name="icon_lg">32dp</dimen>
+    <dimen name="icon_xl">40dp</dimen>
+
+    <!-- Elevation -->
+    <dimen name="elevation_small">2dp</dimen>
+    <dimen name="elevation_medium">4dp</dimen>
+    <dimen name="elevation_large">8dp</dimen>
+
+    <!-- Border Width -->
+    <dimen name="border_width_thin">0.5dp</dimen>
+    <dimen name="border_width_regular">1dp</dimen>
+    <dimen name="border_width_thick">1.5dp</dimen>
+    <dimen name="border_width_xthick">2dp</dimen>
+
+    <!-- Bottom Navigation -->
+    <dimen name="bottom_nav_height">56dp</dimen>
+    <dimen name="bottom_nav_icon_size">24dp</dimen>
+
+    <!-- Toolbar -->
+    <dimen name="toolbar_height">56dp</dimen>
+
+    <!-- Status Bar -->
+    <dimen name="status_bar_height">24dp</dimen>
+
+    <!-- Divider -->
+    <dimen name="divider_height">1dp</dimen>
+
+    <!-- Listing Card -->
+    <dimen name="listing_card_height">120dp</dimen>
+    <dimen name="listing_card_image_width">90dp</dimen>
+    <dimen name="listing_card_image_height">90dp</dimen>
+
+    <!-- Horizontal Listing Card -->
+    <dimen name="horizontal_card_width">160dp</dimen>
+    <dimen name="horizontal_card_image_height">100dp</dimen>
+
+    <!-- Chat -->
+    <dimen name="chat_bubble_max_width">240dp</dimen>
+    <dimen name="chat_bubble_padding">12dp</dimen>
+    <dimen name="chat_avatar_size">36dp</dimen>
+</resources>

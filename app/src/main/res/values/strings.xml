@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App Name -->
+    <string name="app_name">UniStay</string>
+    <string name="app_name_full">UniStay Botswana</string>
+    <string name="app_tagline">Student accommodation, simplified.</string>
+
+    <!-- Navigation -->
+    <string name="nav_home">Home</string>
+    <string name="nav_listings">Listings</string>
+    <string name="nav_chat">Chat</string>
+    <string name="nav_notifications">Alerts</string>
+    <string name="nav_profile">Profile</string>
+    <string name="nav_dashboard">Dashboard</string>
+    <string name="nav_reservations">Reservations</string>
+    <string name="nav_messages">Messages</string>
+
+    <!-- Authentication -->
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="logout">Logout</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="forgot_password_title">Forgot Password?</string>
+    <string name="forgot_password_instruction">Enter your email address and we\'ll send you a reset link</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="student_id">Student ID</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="role_student">Student</string>
+    <string name="role_provider">Property Provider</string>
+
+    <!-- Role Descriptions -->
+    <string name="student_desc">Search and book student accommodation across Gaborone. Pay deposits, chat with landlords, and manage your stay.</string>
+    <string name="provider_desc">List your rooms, manage tenants, track reservations, and communicate with students directly.</string>
+
+    <!-- Listing Related -->
+    <string name="per_month">/month</string>
+    <string name="per_night">/night</string>
+    <string name="deposit">Deposit</string>
+    <string name="available">Available</string>
+    <string name="reserved">Reserved</string>
+    <string name="unavailable">Unavailable</string>
+    <string name="amenities">Amenities</string>
+    <string name="description">Description</string>
+    <string name="location">Location</string>
+    <string name="price">Price</string>
+    <string name="title">Title</string>
+    <string name="add_listing">Add Listing</string>
+    <string name="edit_listing">Edit Listing</string>
+    <string name="delete_listing">Delete Listing</string>
+    <string name="publish_listing">Publish Listing</string>
+    <string name="save_draft">Save as Draft</string>
+
+    <!-- Filter -->
+    <string name="filter">Filter</string>
+    <string name="filter_listings">Filter Listings</string>
+    <string name="min_price">Min Price (BWP)</string>
+    <string name="max_price">Max Price (BWP)</string>
+    <string name="price_range">Price Range</string>
+    <string name="room_type">Room Type</string>
+    <string name="apply_filters">Apply Filters</string>
+    <string name="reset_filters">Reset Filters</string>
+    <string name="no_results">No listings match your filters</string>
+
+    <!-- Payment -->
+    <string name="payment">Payment</string>
+    <string name="deposit_payment">Deposit Payment</string>
+    <string name="reserve_now">Reserve Now</string>
+    <string name="reserve_room">Reserve Room</string>
+    <string name="receipt">Receipt</string>
+    <string name="reference_number">Reference Number</string>
+    <string name="total_paid">Total Paid</string>
+    <string name="payment_method">Payment Method</string>
+    <string name="orange_money">Orange Money</string>
+    <string name="credit_card">Credit/Debit Card</string>
+    <string name="bank_transfer">Bank Transfer</string>
+    <string name="payment_successful">Payment Successful!</string>
+    <string name="payment_failed">Payment Failed</string>
+    <string name="reservation_confirmed">Reservation Confirmed!</string>
+
+    <!-- Chat -->
+    <string name="chat">Chat</string>
+    <string name="type_message">Type a message...</string>
+    <string name="send">Send</string>
+    <string name="online">Online</string>
+    <string name="offline">Offline</string>
+    <string name="typing">Typing...</string>
+
+    <!-- Notifications -->
+    <string name="notifications">Notifications</string>
+    <string name="new_match_found">New Match Found!</string>
+    <string name="price_drop_alert">Price Drop Alert</string>
+    <string name="reservation_alert">Reservation Alert</string>
+    <string name="mark_all_read">Mark all read</string>
+    <string name="no_notifications">No notifications yet</string>
+
+    <!-- Profile -->
+    <string name="profile">Profile</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="change_password">Change Password</string>
+    <string name="saved_listings">Saved Listings</string>
+    <string name="notification_settings">Notification Settings</string>
+    <string name="help_support">Help &amp; Support</string>
+    <string name="delete_account">Delete Account</string>
+    <string name="member_since">Member since</string>
+    <string name="account_information">Account Information</string>
+
+    <!-- Dialog Messages -->
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="save">Save</string>
+    <string name="update">Update</string>
+    <string name="delete">Delete</string>
+    <string name="confirm">Confirm</string>
+
+    <!-- Error Messages -->
+    <string name="error_field_required">This field is required</string>
+    <string name="error_invalid_email">Invalid email address</string>
+    <string name="error_password_too_short">Password must be at least 6 characters</string>
+    <string name="error_password_mismatch">Passwords do not match</string>
+    <string name="error_login_failed">Login failed. Please try again</string>
+    <string name="error_registration_failed">Registration failed. Please try again</string>
+    <string name="error_network">Network error. Check your connection</string>
+    <string name="error_something_wrong">Something went wrong. Please try again</string>
+    <string name="error_no_internet">No internet connection</string>
+    <string name="error_loading_data">Failed to load data</string>
+
+    <!-- Success Messages -->
+    <string name="success_registration">Registration successful!</string>
+    <string name="success_login">Login successful!</string>
+    <string name="success_reservation">Reservation confirmed!</string>
+    <string name="success_payment">Payment successful!</string>
+    <string name="success_profile_update">Profile updated successfully</string>
+    <string name="success_password_change">Password changed successfully</string>
+    <string name="success_logout">Logged out successfully</string>
+
+    <!-- Confirmation Messages -->
+    <string name="confirm_logout">Are you sure you want to logout?</string>
+    <string name="confirm_delete_account">Are you absolutely sure? This will permanently delete all your data including saved listings, reservations, and chat history. This action cannot be undone.</string>
+    <string name="confirm_delete_listing">Are you sure you want to delete this listing?</string>
+    <string name="confirm_cancel_reservation">Are you sure you want to cancel this reservation?</string>
+
+    <!-- Dates and Times -->
+    <string name="today">Today</string>
+    <string name="yesterday">Yesterday</string>
+    <string name="just_now">Just now</string>
+    <string name="minutes_ago">%d min ago</string>
+    <string name="hours_ago">%d hours ago</string>
+    <string name="days_ago">%d days ago</string>
+
+    <!-- Amenities -->
+    <string name="amenity_wifi">WiFi</string>
+    <string name="amenity_water">Water Included</string>
+    <string name="amenity_electricity">Electricity</string>
+    <string name="amenity_parking">Parking</string>
+    <string name="amenity_security">Security</string>
+    <string name="amenity_furnished">Furnished</string>
+    <string name="amenity_kitchen">Kitchen</string>
+    <string name="amenity_laundry">Laundry</string>
+    <string name="amenity_garden">Garden</string>
+    <string name="amenity_ac">Air Conditioning</string>
+    <string name="amenity_study_desk">Study Desk</string>
+    <string name="amenity_wardrobe">Wardrobe</string>
+
+    <!-- Gaborone Locations -->
+    <string name="loc_gaborone_west">Gaborone West</string>
+    <string name="loc_broadhurst">Broadhurst</string>
+    <string name="loc_tlokweng">Tlokweng</string>
+    <string name="loc_mogoditshane">Mogoditshane</string>
+    <string name="loc_old_naledi">Old Naledi</string>
+    <string name="loc_phakalane">Phakalane</string>
+    <string name="loc_riverwalk">Riverwalk</string>
+    <string name="loc_block8">Block 8</string>
+    <string name="loc_bontleng">Bontleng</string>
+
+    <!-- Room Types -->
+    <string name="type_ensuite">Ensuite</string>
+    <string name="type_self_contained">Self-Contained</string>
+    <string name="type_single">Single Room</string>
+    <string name="type_shared">Shared Room</string>
+    <string name="type_studio">Studio</string>
+    <string name="type_flat">Flat</string>
+    <string name="type_bachelor">Bachelor Flat</string>
+
+    <!-- Help & Support -->
+    <string name="support_email">support@unistay.co.bw</string>
+    <string name="support_phone">+267 123 4567</string>
+    <string name="support_address">Gaborone, Botswana</string>
+    <string name="support_hours">Mon-Fri 8am-5pm</string>
+
+    <!-- Terms -->
+    <string name="terms_of_service">Terms of Service</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="terms_agreement">By signing up, you agree to our Terms of Service and Privacy Policy</string>
+
+    <!-- Onboarding -->
+    <string name="welcome">Welcome to UniStay</string>
+    <string name="get_started">Get Started</string>
+    <string name="already_have_account">Already have an account?</string>
+    <string name="dont_have_account">Don\'t have an account?</string>
+    <string name="register_here">Register here</string>
+    <string name="sign_in_here">Sign in here</string>
+</resources>

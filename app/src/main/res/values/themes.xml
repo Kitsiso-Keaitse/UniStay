@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- App Theme - Main -->
+    <style name="Theme.UniStay" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary Colors -->
+        <item name="colorPrimary">@color/blue_primary</item>
+        <item name="colorPrimaryVariant">@color/blue_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <!-- Secondary Colors -->
+        <item name="colorSecondary">@color/purple_primary</item>
+        <item name="colorSecondaryVariant">@color/purple_dark</item>
+        <item name="colorOnSecondary">@color/white</item>
+
+        <!-- Background -->
+        <item name="android:statusBarColor">@color/navy_dark</item>
+        <item name="android:windowBackground">@color/navy_dark</item>
+        <item name="android:colorBackground">@color/navy_dark</item>
+
+        <!-- Surface Colors -->
+        <item name="colorSurface">@color/navy_medium</item>
+        <item name="colorOnSurface">@color/white</item>
+
+        <!-- Bottom Navigation -->
+        <item name="bottomNavigationStyle">@style/Widget.MaterialComponents.BottomNavigationView</item>
+    </style>
+
+    <!-- Splash Screen Theme -->
+    <style name="Theme.UniStay.Splash" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:windowBackground">@drawable/bg_splash</item>
+        <item name="android:statusBarColor">@color/navy_dark</item>
+    </style>
+
+</resources>

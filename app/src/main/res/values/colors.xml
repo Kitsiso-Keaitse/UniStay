@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Colors -->
+    <color name="navy_dark">#0a1628</color>
+    <color name="navy_medium">#0d1f3c</color>
+    <color name="navy_light">#06112a</color>
+
+    <!-- Brand Colors -->
+    <color name="blue_primary">#2563EB</color>
+    <color name="blue_light">#60a5fa</color>
+    <color name="blue_soft">#93c5fd</color>
+    <color name="blue_dark">#1e3a8a</color>
+    <color name="orange_accent">#F97316</color>
+
+    <!-- Provider Colors -->
+    <color name="purple_primary">#7c3aed</color>
+    <color name="purple_light">#c4b5fd</color>
+    <color name="purple_dark">#5b21b6</color>
+
+    <!-- Status Colors -->
+    <color name="green_success">#22c55e</color>
+    <color name="green_dark">#15803d</color>
+    <color name="red_error">#ef4444</color>
+    <color name="red_dark">#b91c1c</color>
+    <color name="yellow_warning">#fbbf24</color>
+    <color name="orange_warning">#f97316</color>
+
+    <!-- Neutral Colors -->
+    <color name="white">#FFFFFF</color>
+    <color name="white_80">#CCFFFFFF</color>
+    <color name="white_60">#99FFFFFF</color>
+    <color name="white_40">#66FFFFFF</color>
+    <color name="white_20">#33FFFFFF</color>
+    <color name="white_10">#1AFFFFFF</color>
+
+    <color name="black">#000000</color>
+    <color name="black_80">#CC000000</color>
+    <color name="black_60">#99000000</color>
+
+    <!-- Background Colors -->
+    <color name="bg_dark">#0a1628</color>
+    <color name="bg_card">#0d1425</color>
+    <color name="bg_input">#15000000</color>
+
+    <!-- Divider Colors -->
+    <color name="divider">#20ffffff</color>
+    <color name="divider_dark">#1a000000</color>
+
+    <!-- Transparent -->
+    <color name="transparent">#00000000</color>
+</resources>

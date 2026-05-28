@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/bg_card_listing"
+    android:padding="@dimen/spacing_md"
+    android:layout_marginBottom="@dimen/spacing_sm"
+    android:clickable="true"
+    android:focusable="true"
+    android:baselineAligned="false">
+
+    <!-- Image Placeholder -->
+    <FrameLayout
+        android:layout_width="@dimen/image_xlarge"
+        android:layout_height="@dimen/image_xlarge"
+        android:layout_marginEnd="@dimen/spacing_md">
+
+        <ImageView
+            android:id="@+id/ivImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_placeholder"
+            android:contentDescription="@null" />
+
+        <!-- Status Badge -->
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/available"
+            tools:text="AVAILABLE"
+            android:textSize="@dimen/text_sm"
+            android:textStyle="bold"
+            android:paddingHorizontal="@dimen/spacing_sm"
+            android:paddingVertical="@dimen/spacing_xxs"
+            android:background="@drawable/bg_tag_success"
+            android:textColor="@color/white"
+            android:layout_gravity="top|end"
+            android:layout_margin="@dimen/spacing_xs" />
+    </FrameLayout>
+
+    <!-- Content -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Modern Ensuite Room"
+            android:textSize="@dimen/text_medium"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:maxLines="1"
+            android:ellipsize="end" />
+
+        <TextView
+            android:id="@+id/tvLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="📍 Gaborone West"
+            android:textSize="@dimen/text_sm"
+            android:textColor="@color/white_40"
+            android:layout_marginTop="@dimen/spacing_xxs"
+            android:maxLines="1"
+            android:ellipsize="end" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/spacing_sm"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tvPrice"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                tools:text="BWP 2,800/mo"
+                android:textSize="@dimen/text_medium"
+                android:textStyle="bold"
+                android:textColor="@color/blue_light" />
+
+            <!-- Chat Button -->
+            <Button
+                android:id="@+id/btnItemChat"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:text="Chat"
+                android:textSize="12sp"
+                android:textColor="@color/white"
+                android:background="@drawable/bg_button_primary"
+                android:paddingHorizontal="16dp"
+                android:textAllCaps="false"
+                android:minHeight="0dp"
+                android:minWidth="0dp" />
+        </LinearLayout>
+
+        <!-- Amenities Row -->
+        <LinearLayout
+            android:id="@+id/amenitiesContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/spacing_sm">
+
+            <TextView
+                android:id="@+id/tvAmenity1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/amenity_wifi"
+                tools:text="WiFi"
+                android:textSize="@dimen/text_sm"
+                android:paddingHorizontal="@dimen/spacing_sm"
+                android:paddingVertical="@dimen/spacing_xxs"
+                android:background="@drawable/bg_role_selected_student"
+                android:textColor="@color/blue_light"
+                android:layout_marginEnd="@dimen/spacing_xs" />
+
+            <TextView
+                android:id="@+id/tvAmenity2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/amenity_water"
+                tools:text="Water"
+                android:textSize="@dimen/text_sm"
+                android:paddingHorizontal="@dimen/spacing_sm"
+                android:paddingVertical="@dimen/spacing_xxs"
+                android:background="@drawable/bg_role_selected_student"
+                android:textColor="@color/blue_light"
+                android:layout_marginEnd="@dimen/spacing_xs" />
+
+            <TextView
+                android:id="@+id/tvAmenity3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/amenity_security"
+                tools:text="Security"
+                android:textSize="@dimen/text_sm"
+                android:paddingHorizontal="@dimen/spacing_sm"
+                android:paddingVertical="@dimen/spacing_xxs"
+                android:background="@drawable/bg_role_selected_student"
+                android:textColor="@color/blue_light"
+                android:visibility="gone" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "821791963671",
+    "project_id": "unistay-6d80a",
+    "storage_bucket": "unistay-6d80a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:821791963671:android:0f0a8fb40451b150fc7a52",
+        "android_client_info": {
+          "package_name": "com.unistay"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAuOYl8Sy7gzXbNm7nq92Zczg1Hj8Np9JU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
