@@ -120,6 +120,16 @@
         android:textAllCaps="false"
         android:gravity="start|center_vertical"
         android:paddingStart="12dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Save Preferences Checkbox -->
+    <CheckBox
+        android:id="@+id/cbSavePrefs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save as my preferences for alerts"
+        android:textColor="@color/white_40"
+        android:textSize="12sp"
         android:layout_marginBottom="24dp" />
 
     <!-- Buttons -->

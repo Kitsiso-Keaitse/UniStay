@@ -131,6 +131,13 @@ class ListingsFragment : Fragment() {
         val btnPickDate = dialogView.findViewById<Button>(R.id.btnPickDate)
         val btnApply = dialogView.findViewById<Button>(R.id.btnApplyFilters)
         val btnReset = dialogView.findViewById<Button>(R.id.btnResetFilters)
+        
+        // Add a "Save as Preferences" checkbox dynamically or via XML update
+        val cbSavePrefs = CheckBox(requireContext()).apply {
+            text = "Save as my preferences for alerts"
+            setTextColor(resources.getColor(R.color.white_40))
+        }
+        (dialogView as LinearLayout).addView(cbSavePrefs, dialogView.indexOfChild(btnApply) - 1)
 
         val locations = arrayOf("Any", "Gaborone West", "Broadhurst", "Tlokweng", "Mogoditshane", "Old Naledi", "Phakalane")
         val types = arrayOf("Any", "Ensuite", "Self-Contained", "Single", "Shared", "Studio", "Flat")
@@ -166,16 +173,41 @@ class ListingsFragment : Fragment() {
         }
 
         btnApply.setOnClickListener {
+            val minP = etMinPrice.text.toString().toIntOrNull() ?: 0
+            val maxP = etMaxPrice.text.toString().toIntOrNull() ?: 10000
+            val loc = if (spLocation.selectedItemPosition > 0) listOf(locations[spLocation.selectedItemPosition]) else emptyList()
+            val typ = if (spType.selectedItemPosition > 0) listOf(types[spType.selectedItemPosition]) else emptyList()
+
             currentFilter = FilterCriteria(
-                minPrice = etMinPrice.text.toString().toIntOrNull() ?: 0,
-                maxPrice = etMaxPrice.text.toString().toIntOrNull() ?: 10000,
-                locations = if (spLocation.selectedItemPosition > 0) listOf(locations[spLocation.selectedItemPosition]) else emptyList(),
-                types = if (spType.selectedItemPosition > 0) listOf(types[spType.selectedItemPosition]) else emptyList(),
+                minPrice = minP,
+                maxPrice = maxP,
+                locations = loc,
+                types = typ,
                 availableFrom = tempSelectedDate
             )
+
+            if (cbSavePrefs.isChecked) {
+                savePreferencesToFirestore(currentFilter)
+            }
+
             loadAllListings()
             dialog.dismiss()
         }
         dialog.show()
+    }
+
+    private fun savePreferencesToFirestore(filter: FilterCriteria) {
+        val userId = auth.currentUser?.uid ?: return
+        val prefs = mapOf(
+            "minPrice" to filter.minPrice,
+            "maxPrice" to filter.maxPrice,
+            "locations" to filter.locations,
+            "types" to filter.types,
+            "availableFrom" to filter.availableFrom
+        )
+        db.collection("users").document(userId).update("savedFilters", prefs)
+            .addOnSuccessListener {
+                Toast.makeText(requireContext(), "Preferences saved for alerts!", Toast.LENGTH_SHORT).show()
+            }
     }
 }

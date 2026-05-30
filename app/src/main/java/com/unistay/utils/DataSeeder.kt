@@ -7,14 +7,14 @@ import com.unistay.models.User
 import java.util.*
 
 object DataSeeder {
-    private val db = FirebaseFirestore.getInstance()
 
     fun seedData() {
-        seedStudents()
-        seedAccommodations()
+        val db = FirebaseFirestore.getInstance()
+        seedStudents(db)
+        seedAccommodations(db)
     }
 
-    private fun seedStudents() {
+    private fun seedStudents(db: FirebaseFirestore) {
         val batch = db.batch()
         for (i in 1..50) {
             val userId = "student_$i"
@@ -30,10 +30,10 @@ object DataSeeder {
             )
             batch.set(db.collection("users").document(userId), user)
         }
-        batch.commit().addOnSuccessListener { Log.d("DataSeeder", "50 Students seeded") }
+        batch.commit().addOnSuccessListener { Log.d("DataSeeder", "50 Students seeded successfully") }
     }
 
-    private fun seedAccommodations() {
+    private fun seedAccommodations(db: FirebaseFirestore) {
         val locations = listOf("Gaborone West", "Broadhurst", "Tlokweng", "Mogoditshane", "Phakalane", "Block 6", "Block 9", "Village")
         val types = listOf("Ensuite", "Self-Contained", "Single", "Shared", "Studio", "Flat")
         val amenities = listOf("WiFi", "Laundry", "Parking", "Security", "AC", "Gym")
@@ -51,14 +51,14 @@ object DataSeeder {
                 location = locations.random(),
                 type = types.random(),
                 amenities = amenities.shuffled().take(3),
-                images = listOf("https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?q=80&w=1000"), // Sample image
-                availableFrom = System.currentTimeMillis() + (0..30L * 24 * 60 * 60 * 1000).random(), // Next 30 days
+                images = listOf("https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?q=80&w=1000"),
+                availableFrom = System.currentTimeMillis() + (0..30L * 24 * 60 * 60 * 1000).random(),
                 providerId = "provider_1",
                 providerName = "Admin Provider",
                 status = "available"
             )
             batch.set(db.collection("accommodations").document(id), acc)
         }
-        batch.commit().addOnSuccessListener { Log.d("DataSeeder", "50 Listings seeded") }
+        batch.commit().addOnSuccessListener { Log.d("DataSeeder", "50 Listings seeded successfully") }
     }
 }
